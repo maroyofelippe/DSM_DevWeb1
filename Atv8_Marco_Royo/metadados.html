@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--Idioma da página-->
+<head>
+    <!--Aula 5 - Metadados-->
+    <meta charset="UTF-8">  <!--Prepara para receber caracteres especiais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula de comentários, metadados, listas e layouts">
+    <meta name="keywords" content="HTML, comentários, Listas, Layout, Elementos Semaânticos">
+    <meta name="author" content="Marco Royo"> <!--Metadados que referencia o autor da página-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--Inserir Icone na aba do navegador. O ideal é que tenha boa resolução e com tamanho quadrado (80x80 , 90x90, 100x100 px)-->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Aula 5 - Metadados</title>
+</head>
+<body>
+    <header id="topo">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o Conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o Menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir para o Rodapé [3]</a></li>
+
+                <li id="pgaccess"><a href="./acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li id="contrastep"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li id="scontraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li id="fonteA"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li id="fontea"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+        <img id="logotopo" src="./img/FATEC_ZONA_LESTE.png" alt="Imagem com logo Fatec em cinza e vermelho">
+        
+        <nav>
+            <!--Menu Hamburguer-->
+            <label for="bt_menu"><img src="./img/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <!--Fim Menu Hamburguer-->
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a>
+                    <ul>
+                        <li> <a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li> <a href="lista_nao_ordenada.html">Lista Não Ordenada</a></li>
+                    </ul>
+                </li>
+                <li> <a href="layout.html">Layout</a> </li>
+                <li> <a href="contato.html">Contato</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <h1>METADADOS</h1>
+       <!--Aqui começa o Breadcrumb, que é a idéia de mostrar o caminho de volta para o início do site-->
+       <ul class="breadcrumb">
+        <li><a href="index.html">Início</a></li>
+        <li>Metadados</li>
+    </ul>
+    <!--Fim do BreadCrumb-->
+
+
+        <img class="imagem_conteudo2" src="./img/metadados.png" alt="Imagem contendo a forma de uso dos metadados.">
+        <p class="parag1">Metadados são dados externos à página que são usados ​​pelos navegadores (como exibir conteúdo), pelos mecanismos de pesquisa (palavras-chave) e outros serviços da web;</p>
+        <p class="parag1"> São integrados à página HTML pela tag &lt;meta&gt;</p>
+        <p class="parag1">O elemento &lt;meta&gt; é usado para especificar qual conjunto de caracteres é usado, descrição da página, palavras-chave, autor e outros metadados.</p>
+    </main>
+    <footer id="rodape">
+        <p id=parag_dev>Desenvolvido por Royo &copy; 2021</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS válido!" />
+                </a>
+            </p>
+    </footer>
+</body>
+</html>
